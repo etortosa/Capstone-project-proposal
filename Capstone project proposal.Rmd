@@ -1,0 +1,41 @@
+---
+title: "Capstone project proposal"
+author: "Elena Tortosa"
+date: "1/17/2019"
+output: html_document
+---
+##**Unraveling Protein-Signaling Networks from Multiparameter Single-Cell Data**
+
+###**General introduction**
+Cells, as part of complex multicellular organisms, need to communicate among themselves and work together to make an organism alive. Communication between cells triggers signaling cascades inside the cell that regulate specific cellular functions such as cell division, differentiation, migration or death.</p> 
+Each signal transduction is initiated with a stimulus, an extracellular messenger that binds to a receptor located in the external boundary of the cell, and initiates intracellular cascades, activating a series of targets, which in turn will lead to the desired cellular response. </p>
+The signal cascades involve phosphorylation/dephosphorylation events that lead to the activation or inhibition of proteins and phospholipids, as main components of the cascade. 
+Deciphering signaling cascades is essential to properly understand cellular responses and their potential dysregulation in disease. 
+
+###**Aim**
+The aim of this project is to inferred the basic structure of a classical signaling network that connects a number of key phosphorylated proteins/phospholipids in human T cells. 
+
+###**Target client**
+Reconstruction of signaling network models might be applied to understand native-states of signaling networks and can potentially provide important mechanistic information of clinical relevance in the course of a disease state or in the presence of pharmaceutical agents. For example, this method could identify sets of signaling molecules that explain differences between responses to chemotherapy in patients with cancer. </p>
+Additionally, application of this approach to other sets of molecules, cell types, disease states, and interventions (such as pharmaceutical treatments) should enhance our understanding of signaling networks.</p>
+Therefore, health services as hospitals and pharmaceutical companies could be potential clients interested in this work.
+
+###**Data type**
+The data is hosted here [data](http://www.causality.inf.ethz.ch/repository.php?id=3)  and comes originally from the paper [Sachs et al, 2005](https://www.ncbi.nlm.nih.gov/pubmed/15845847).</p>
+This project relies on the simultaneous measurement of multiple phosphorylated protein and phospholipid components in thousands of individual primary human immune system cells after a series of stimulatory cues and inhibitory interventions. The data obtained will be used to profile the effects of each condition on the intracellular signaling network and to elucidate the ordering of connections between pathway components.</p>
+The technique used in the measurements, the intracellular multicolor flow cytometry, allows more quantitative simultaneous observations of multiple signaling molecules in many thousands of individual cells. Because each cell is treated as an independent observation, flow cytometric data provide a statistically large sample that enable us to predict pathway structure.</p>
+The authors measured 11 phosphorylated proteins and phospholipids (PKC, PKA, P38, pjnk, praf, pmek, Erk , pAkt, pPLC-gamma, PIP2 and PIP3)  in nine different conditions (roughly 700 to 900 single cell measurements).</p>
+Each independent sample in this data set consists of quantitative amounts of each of the 11 phosphorylated molecules, simultaneously measured from single cells. 
+
+###**Approach**
+The data will be tidy and cleaned, and some exploratory analysis will be done. 
+Afterwards, we will:
+<li>Profile the effect of each perturbation.</li> 
+<li>Analyze differences between perturbations.</li>
+<li>Analyze perturbation specificity towards certain component.</li>
+<li>Analyze dependencies between the different components.</li>
+<li>Establish a hierarchy or relation between all the components measured.</li>
+<li>Build predictions of response to hypothetic perturbations. </li>
+
+###**Deliverables**
+Deliverables will include a written document with a project overview, any necessary background knowledge and clearly defined goals, the target audience, data description and the approach used. This document it will be associated to the code and a slide deck. 
